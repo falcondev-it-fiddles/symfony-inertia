@@ -1,0 +1,18 @@
+index:
+  path: /
+  controller: App\Controller\HomeController::index
+
+posts_create:
+  path: /todos
+  controller: App\Controller\HomeController::create
+  methods: POST
+
+posts_update:
+  path: /todos/{id}
+  controller: App\Controller\HomeController::update
+  methods: PATCH
+
+posts_delete:
+  path: /todos/{id}
+  controller: App\Controller\HomeController::delete
+  methods: DELETE
